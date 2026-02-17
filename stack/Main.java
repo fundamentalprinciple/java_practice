@@ -28,6 +28,10 @@ class Stack {
     public TreeNode pop() {
         return this.stackList.remove(stackList.size()-1);
     }
+
+    public boolean isEmpty() {
+        return this.stackList.size() == 0;    
+    }
 }
 
 class Main {
@@ -39,8 +43,10 @@ class Main {
         root.right = child2;
         
         Stack treeStack = new Stack();
+        System.out.println(treeStack.isEmpty());
         treeStack.push(root);
         treeStack.push(root.left);
+        System.out.println(treeStack.isEmpty());
         System.out.println(treeStack.top().val);
         System.out.println(treeStack.pop().val);
         System.out.println(treeStack.top().val);        
