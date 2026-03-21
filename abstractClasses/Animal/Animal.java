@@ -6,15 +6,15 @@ abstract class Animal {
 }
 
 class Pig extends Animal {
-    public void animalSound() {
-        System.out.println("weeee weeee");
-    }
+    //public void animalSound() {
+        //System.out.println("weeee weeee");
+    //}
 }
 
 class Main {
     public static void main(String[] args) {
-        Pig peppa = new Pig();
-        peppa.animalSound();
-        Pig.sleep();
+        //Pig peppa = new Pig();
+        //peppa.animalSound();
+        //Pig.sleep();
     }
 }

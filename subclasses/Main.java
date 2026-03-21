@@ -12,6 +12,12 @@ public class Main {
         System.out.println(e.getName());
         Manager Ron = (Manager) e;
         System.out.println(Ron.getSecretary().getName());
-        return;
+
+        if (vohn instanceof Employee) {
+            System.out.println("vohn is an instance of employee");
+        }        
+
+        Employee[] arr = new Manager[100];
+        // not Manager[] arr2 = new Employee[100];
     }
 }
